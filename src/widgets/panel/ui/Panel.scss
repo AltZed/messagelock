@@ -1,0 +1,128 @@
+@import '../../../shared/style/mixins.scss';
+@import '../../../shared/style/vars.scss';
+
+
+.block-panel {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include adapt-box-width(90px, 290px);
+    @include adapt-box-height(320px, 620px);
+    
+    margin-top: 50px;
+
+    gap: 10px;
+
+}
+
+.search-block {
+    background-color: $component-color;
+    @include adapt-box-width(90px, 220px); 
+    @include adapt-box-height(13px, 31px); 
+    height: 31px;
+    border-radius: 11px;
+
+    padding: 4px 10px;
+
+    display: flex;
+    align-items: center;
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        height: 27px;
+        margin-left: 7px;
+        border-radius: 11px;
+
+        background-color: $black-gray;
+        
+        outline: none;
+        border: none;
+        padding-left: 10px;
+        color: #fff;
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 85%;
+        background-color: rgba(#fff, .5);
+        margin-top: 10px;
+    }
+        &:last-child::after {
+        display: none;
+    }
+}
+
+.main-panel {
+    background-color: $component-color;
+    border-radius: 11px;
+    padding: 4px 10px;
+    @include adapt-box-width(90px, 220px); 
+    @include adapt-box-height(300px, 300px); 
+
+
+    display: flex;
+    flex-direction: column;
+
+    .panel-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        @include adapt-text(8px, 14px);
+        color: #fff;
+        margin-bottom: 5px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        &:hover {
+            color: $turquoise;
+        }
+        transition: all .3s ease;
+    }
+
+    .settings {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    @include adapt-box-width(90px, 220px);
+    .info-link {
+        @include adapt-text(8px, 10px);
+        color: rgba(#fff, .5);
+        text-decoration: underline;
+        margin-bottom: 5px;
+        &:hover {
+            color: #fff;
+        }
+        transition: all .3s ease;
+    }
+}

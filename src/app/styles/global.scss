@@ -1,0 +1,37 @@
+@import 'vars';
+@import '../../shared/style/vars.scss';
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap'); // Jost, PT Mono 
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    font-family: "Jost", serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fullscreen {
+    background-color: $bg-color;
+    display: flex;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $turquoise;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $bg-color;
+    border-radius: 10px;
+}
