@@ -1,5 +1,5 @@
-@import 'vars';
-@import '../../shared/style/vars.scss';
+@use 'vars.scss';
+@use '../../shared/style/vars.scss' as style-vars;
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=PT+Mono&display=swap'); // Jost, PT Mono 
 
@@ -16,7 +16,7 @@ html, body {
 }
 
 .fullscreen {
-    background-color: $bg-color;
+    background-color: vars.$bg-color;
     display: flex;
     min-height: 100vh;
 }
@@ -27,11 +27,11 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $turquoise;
+    background-color: style-vars.$turquoise;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: $bg-color;
+    background-color: vars.$bg-color;
     border-radius: 10px;
 }

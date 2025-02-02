@@ -1,6 +1,11 @@
 import React from 'react'
 import '../style/style.scss'
 
+/**
+ * Описание компонента поле ввода. 
+ * 
+*/
+
 function Input({
     placeholder,
     type,

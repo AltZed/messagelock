@@ -1,5 +1,5 @@
-@import '../../../shared/style/mixins.scss';
-@import '../../../shared/style/vars.scss';
+@use '../../../shared/style/mixins.scss';
+@use '../../../shared/style/vars.scss';
 
 .post-heading {
     
@@ -15,8 +15,8 @@
     border-bottom-right-radius: 11px;
     
 
-    @include adapt-text(16px, 20px);
-    background-color: $black-gray;
+    @include mixins.adapt-text(16px, 20px);
+    background-color: vars.$black-gray;
     color: white;
     font-weight: 500;
 
@@ -36,7 +36,7 @@
 
     input {
         width: 100%;
-        @include adapt-text(16px, 20px);
+        @include mixins.adapt-text(16px, 20px);
         background-color: transparent;
         color: white;
         border: none;

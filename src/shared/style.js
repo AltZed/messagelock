@@ -1,4 +1,9 @@
-
+/**
+ * Описание js стилей для компонентов.
+ * 
+ * buttonStyle - стили для кнопок 
+ * headingPostStyle - стили для заголовка поста
+ */
 export const buttonStyle = ({
     bgColor,
     textColor,

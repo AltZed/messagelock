@@ -1,9 +1,9 @@
-@import '../../../shared/style/mixins.scss';
-@import '../../../shared/style/vars.scss';
+@use '../../../shared/style/mixins.scss';
+@use '../../../shared/style/vars.scss';
 
 .auth-form {
-    @include adapt-box-width(200px, 621px);
-    @include adapt-box-height(200px, 621px);
+    @include mixins.adapt-box-width(200px, 621px);
+    @include mixins.adapt-box-height(200px, 621px);
     
     border-radius: 20px;
 
@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: $component-color;
+    background-color: vars.$component-color;
 
 }
 
@@ -40,8 +40,8 @@
 }
 
 .heading {
-    color: $turquoise;
-    @include adapt-text(10px, 30px);
+    color: vars.$turquoise;
+    @include mixins.adapt-text(10px, 30px);
     margin-top: 10px;
 }
 
@@ -51,16 +51,16 @@
 
     justify-content: space-around;
     gap: 10px;
-    @include adapt-box-width(100px, 360px);
+    @include mixins.adapt-box-width(100px, 360px);
     
 }
 
 .border-green {
-    border: 3px solid $green;
-    box-shadow: 0px 0px 16px $green;
+    border: 3px solid vars.$green;
+    box-shadow: 0px 0px 16px vars.$green;
 }
 
 .border-turquoise {
-    border: 3px solid $turquoise;
-    box-shadow: 0px 0px 16px $turquoise;
+    border: 3px solid vars.$turquoise;
+    box-shadow: 0px 0px 16px vars.$turquoise;
 }

@@ -6,6 +6,12 @@ import { Button, Input, LinkButton, colors } from '@/shared'
 
 import './AuthForm.scss'
 
+/**
+ *  Описание компонента формы авторизации. 
+ *  @param {boolean} signin - указывает, нужно ли отобразить форму авторизации или регистрации.
+ * 
+ *  signin ? 'Войти' : 'Регистрация'
+ */
 
 function AuthForm({
   signin

@@ -1,15 +1,15 @@
-@import 'mixins.scss';
-@import 'vars.scss';
+@use 'mixins.scss';
+@use 'vars.scss';
 
 .input {
     input {
-        @include adapt-box-width(100px, 360px);
-        @include adapt-box-height(20px, 45px);
+        @include mixins.adapt-box-width(100px, 360px);
+        @include mixins.adapt-box-height(20px, 45px);
         
         border: none;
         outline: none;
     
-        background-color: $input-color;
+        background-color: vars.$input-color;
         border-radius: 11px;
     
         margin-top: 10px;
@@ -34,8 +34,8 @@
     cursor: pointer;
 
 
-    @include adapt-box-width(100px, 360px);
-    @include adapt-box-height(20px, 45px);
+    @include mixins.adapt-box-width(100px, 360px);
+    @include mixins.adapt-box-height(20px, 45px);
 
     display: flex;
     justify-content: center;
@@ -44,8 +44,8 @@
     border-radius: 8px;
 
     svg {
-        @include adapt-box-width(16px, 30px);
-        @include adapt-box-height(16px, 30px);
+        @include mixins.adapt-box-width(16px, 30px);
+        @include mixins.adapt-box-height(16px, 30px);
     }
     
     transition: all 0.5s ease;

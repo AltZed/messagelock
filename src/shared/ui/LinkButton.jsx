@@ -3,6 +3,19 @@ import { buttonStyle } from '../style'
 import '../style/style.scss'
 import { Link } from 'react-router-dom'
 
+/**
+ * Описание компонента кнопки для 
+ * перехода между страницами. 
+ * 
+ * ```JSX
+ *  <LinkButton 
+ *    ...
+ *    to='/path' 
+ *  />
+ * ```
+ * 
+*/
+
 function LinkButton({
   bgColor,
   text,

@@ -1,5 +1,5 @@
-@import '../../../shared/style/mixins.scss';
-@import '../../../shared/style/vars.scss';
+@use '../../../shared/style/mixins.scss';
+@use '../../../shared/style/vars.scss';
 
 
 .block-panel {
@@ -8,8 +8,8 @@
     align-items: center;
     flex-direction: column;
 
-    @include adapt-box-width(90px, 290px);
-    @include adapt-box-height(320px, 620px);
+    @include mixins.adapt-box-width(90px, 290px);
+    @include mixins.adapt-box-height(320px, 620px);
     
     margin-top: 50px;
 
@@ -18,9 +18,9 @@
 }
 
 .search-block {
-    background-color: $component-color;
-    @include adapt-box-width(90px, 220px); 
-    @include adapt-box-height(13px, 31px); 
+    background-color: vars.$component-color;
+    @include mixins.adapt-box-width(90px, 220px); 
+    @include mixins.adapt-box-height(13px, 31px); 
     height: 31px;
     border-radius: 11px;
 
@@ -41,7 +41,7 @@
         margin-left: 7px;
         border-radius: 11px;
 
-        background-color: $black-gray;
+        background-color: vars.$black-gray;
         
         outline: none;
         border: none;
@@ -73,11 +73,11 @@
 }
 
 .main-panel {
-    background-color: $component-color;
+    background-color: vars.$component-color;
     border-radius: 11px;
     padding: 4px 10px;
-    @include adapt-box-width(90px, 220px); 
-    @include adapt-box-height(300px, 300px); 
+    @include mixins.adapt-box-width(90px, 220px); 
+    @include mixins.adapt-box-height(300px, 300px); 
 
 
     display: flex;
@@ -88,7 +88,7 @@
         flex-direction: row;
         align-items: center;
         gap: 5px;
-        @include adapt-text(8px, 14px);
+        @include mixins.adapt-text(8px, 14px);
         color: #fff;
         margin-bottom: 5px;
 
@@ -98,7 +98,7 @@
         }
 
         &:hover {
-            color: $turquoise;
+            color: vars.$turquoise;
         }
         transition: all .3s ease;
     }
@@ -114,9 +114,9 @@
 .info {
     display: flex;
     flex-direction: column;
-    @include adapt-box-width(90px, 220px);
+    @include mixins.adapt-box-width(90px, 220px);
     .info-link {
-        @include adapt-text(8px, 10px);
+        @include mixins.adapt-text(8px, 10px);
         color: rgba(#fff, .5);
         text-decoration: underline;
         margin-bottom: 5px;
