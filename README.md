@@ -1,8 +1,43 @@
-# React + Vite
+![](https://github.com/user-attachments/assets/064d0016-36b6-4dcc-9207-bf6ecb3db5a9)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Социальная сеть MessageLock
+MessageLock — это безопасная социальная сеть, которая позволяет людям удобно делиться информацией и обеспечивает защиту передаваемых данных.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Содержание
+- [Технологии](#технологии)
+- [Использование](#использование)
+- [To do](#to-do)
+
+## Технологии
+- [Vite + React](https://vite.dev/guide)
+- [Scss](https://sass-lang.com/documentation)
+
+## Использование
+Для использования вам понадобиться [Node.js](https://nodejs.org/en) версии 22.x и выше.
+Установите Node.js и клонируйте репозиторий с помощью команды.
+```
+git clone https://github.com/AltZed/messagelock.git
+```
+
+После клонирования перейдите в каталог проекта.
+```
+cd ./path/messagelock
+```
+И установите необходимые библиотеки и плагины.
+```
+npm install
+```
+Для запуска в режиме разработки введите.
+```
+npm run dev
+```
+Для сборки проекта введите.
+```
+npm run build
+```
+
+## To do
+- [ ] Разработка основных страниц
+- [ ] Логика работы для аунтефикации
+- [ ] Логика работы для регистрации
