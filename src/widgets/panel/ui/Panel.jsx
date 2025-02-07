@@ -12,34 +12,26 @@ import { MdDynamicFeed } from "react-icons/md"
 
 import './Panel.scss'
 
-
 /**
  * Описание компонента панели.
  * 
  * Для перехода используется {@link Link | `<Link>`}.
- * Панель разделена на два блоки:
- * 
+ * Панель разделена на два блока:
  * - .social:
  *   - /profile
  *   - /friends
  *   - /messages
  *   - /groups
  *   - /feed
- * 
  * - .pay:
  *   - /market
  *   - /pay
- *
  * - .settings:
  *   - settings
  *   - exit
-
-* - .info:
+ * - .info:
  *   - Доп.ссылки на прочую информацию.
-
- * 
  */
-
 
 function Panel() {
   return (
