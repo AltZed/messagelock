@@ -1,8 +1,18 @@
 import React from 'react'
 import './PostHeading.scss'
 
+/**
+ * Компонент который отвечает за ввод заголовка или его вывод.
+ * isCreate ? (создание) : (вывод)
+ * isCreate ? text - игнор : text - вывод 
+ * 
+ * color - цвет заголовка. По умолчанию #FFF
+ * 
+ */
+
+
 function PostHeading({
-    text, color,
+    text, color='#FFF',
     isCreate, onChange
 }) {
   return (

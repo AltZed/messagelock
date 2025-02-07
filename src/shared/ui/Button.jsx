@@ -11,11 +11,11 @@ function Button({
   bgColor,
   text,
   textColor,
-  icon,
+  icon, onClick, className
 }) {
   const [isHover, setHover] = useState(false)
   return (
-    <div className={`button`} 
+    <div className={`button ${className}`} onClick={onClick}
       onMouseLeave={() => setHover(false)}
       onMouseEnter={() => setHover(true)}
       style={buttonStyle({bgColor, textColor, isHover})}>
