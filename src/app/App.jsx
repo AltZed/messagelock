@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from './navigation/Navigation'
 import { BrowserRouter } from "react-router"
+import ChangeTitle from './navigation/ChangeTitle'
 
 import './styles/global.scss'
 
@@ -20,8 +21,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation />
+      <ChangeTitle />
     </BrowserRouter>
   )
 }
-
+     
 export default App

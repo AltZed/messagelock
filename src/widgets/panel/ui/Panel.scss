@@ -77,8 +77,7 @@
     border-radius: 11px;
     padding: 4px 10px;
     @include mixins.adapt-box-width(90px, 220px); 
-    @include mixins.adapt-box-height(300px, 300px); 
-
+    min-height: 300px;
 
     display: flex;
     flex-direction: column;
